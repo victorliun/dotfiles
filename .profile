@@ -20,7 +20,7 @@ alias lt="ls -ltr"
 alias la="ls -a"  
 #show hidden files
 alias lla="ls -al"
-
+alias psgrep="ps aux | grep "
 
 export PATH=$PATH:/usr/local/sbin:$HOME/script/
 
