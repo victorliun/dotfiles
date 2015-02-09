@@ -53,28 +53,3 @@ if [ ! -z "$PS1" ]; then
         _tmux-init-history
     fi
 fi
-##
-# Your previous /Users/Victor/.profile file was backed up as /Users/Victor/.profile.macports-saved_2014-02-18_at_09:59:26
-##
-
-# MacPorts Installer addition on 2014-02-18_at_09:59:26: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-
-function nginxctl {
-    if [ $1 == "reload" ]; then
-        echo "Unloading Nginx..."
-        sudo launchctl unload -w /Library/LaunchDaemons/org.mxcl.nginx.plist
-        wait
-        echo "Loading Nginx..."
-        sudo launchctl load -w /Library/LaunchDaemons/org.mxcl.nginx.plist
-    elif [ $1 == "unload" ]; then
-        echo "Unloading Nginx..."
-        sudo launchctl unload -w /Library/LaunchDaemons/org.mxcl.nginx.plist
-    elif [ $1 == "load" ]; then
-        echo "Loading Nginx..."
-         launchctl load -w /Library/LaunchDaemons/org.mxcl.nginx.plist
-    else
-        echo "Command $1 unsupported"
-    fi
-}
