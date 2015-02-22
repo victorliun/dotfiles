@@ -2,7 +2,7 @@
 ###### Prompt colour configuration ##########
 # uncomment one of the line below depends on you are on host or guest
 # If you are on host
-export PS1="\[\e[35;1m\]\u@\h - \[\e[32;1m\]\t \[\e[31;1m\]\w\[\e[32;1m\]\\$\[\e[36;1m\] "
+export PS1="\[\e[35;1m\]\u@\h - \[\e[32;1m\]\t \[\e[31;1m\]\w\[\e[32;1m\]\\n\$\[\e[36;1m\] "
 # If you are on guest
 # export PS1="\[\e[34;1m\]\u@\h - \[\e[33;1m\]\t \[\e[31;1m\]\w\[\e[32;1m\]\\$\[\e[39;0m\] "
 export CLICOLOR=1
