@@ -59,3 +59,8 @@ if [ ! -z "$PS1" ]; then
         _tmux-init-history
     fi
 fi
+
+tm() {
+  [[ -z "$1" ]] && { echo "usage: tm <session>" >&2; return 1; }
+  tmux has -t $1 && tmux attach -d -t $1 || tmux new -s $1
+}
