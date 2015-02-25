@@ -35,7 +35,7 @@ alias .5="cd ../../../../../"
 
 alias sem="sudo emacs"
 alias h="history"
-export PATH=$PATH:/usr/local/sbin:$HOME/script/
+export PATH=$PATH:/usr/local/sbin:$HOME/bin/
 
 source ~/dotfiles/git-completion.bash
 
