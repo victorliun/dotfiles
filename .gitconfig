@@ -1,6 +1,6 @@
 [user]
 	name = Victor Liu
-	email = victor.liu@headforwards.com
+	email = victor.ns.liu@outlook.com
 [core]
 	editor = emacs
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
@@ -52,6 +52,7 @@
 [alias]
 	a = add --all
 	ai = add -i
+	au = add -u
 	#############
 	ap = apply
 	as = apply --stat
