@@ -175,6 +175,8 @@
 	sp = stash pop
 	ss = stash save
 	sw = stash show
+        swe = "!f() { git stash show stash^{/$*} -p; }; f"
+        sae = "!f() { git stash apply stash^{/$*}; }; f"   
 	#############
 	w = show
 	wp = show -p
