@@ -14,4 +14,4 @@ init:
 sync:
         git pull
         git push
-https://code.google.com/p/tunnelblick/wiki/DownloadsEntry#Tunnelblick_Stable_Release
+
