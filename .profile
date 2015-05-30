@@ -33,32 +33,13 @@ alias .3="cd ../../.."
 alias .4="cd ../../../.."
 alias .5="cd ../../../../../"
 
-alias sem="sudo emacs"
 alias h="history"
 export PATH=$PATH:/usr/local/sbin:$HOME/bin/
-
-source ~/dotfiles/git-completion.bash
-
 alias em='/usr/local/Cellar/emacs/24.3/bin/emacs'
-
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages/vtk/
-export PYTHONSTARTUP=~/.pythonstartup
-
-export PROJECT_ROOT="/Users/Victor/Public/www/rainbow/blog"
-export OPEN_SOURCE="/Users/Victor/Public/open-source"
 
 function alliey {
     ssh -i ~/Public/www/alliey_Liu.pem ubuntu@54.213.167.105
 }
-#source ~/scripts/tmux_session.sh
-
-if [ ! -z "$PS1" ]; then
-    _tmuxrc="$HOME/scripts/.bashrc.tmux"
-    if [ -e $_tmuxrc ]; then
-        source $_tmuxrc
-        _tmux-init-history
-    fi
-fi
 
 tm() {
   [[ -z "$1" ]] && { echo "usage: tm <session>" >&2; return 1; }
