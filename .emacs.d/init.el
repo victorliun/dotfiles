@@ -29,3 +29,11 @@
 (setq auto-save-default nil)
 
 ;;; speed up movement.
+
+
+;;; add melpa
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.org/packages/") t)
+;; key-bindings for magit
+(global-set-key (kbd "C-x g") 'magit-status)
